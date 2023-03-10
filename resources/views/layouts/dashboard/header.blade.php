@@ -1,3 +1,6 @@
+<body class="hold-transition sidebar-mini layout-fixed" >
+<div class="wrapper">
+
 <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
@@ -5,12 +8,9 @@
             <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="{{route('dashboard.index')}}" class="nav-link">{{ __('dashboard.home') }}</a>
+            <a href="{{route('dashboard.view_home_page')}}" class="nav-link">{{ __('dashboard.home') }}</a>
         </li>
-        <li class="nav-item d-none d-sm-inline-block">
-            <a href="#" class="nav-link">{{ __('dashboard.content') }}</a>
-        </li>
-    </ul>
+           </ul>
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
@@ -124,28 +124,31 @@
             </li>
         @endforeach
     </ul>
+
 </nav>
 
-<!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-        <div class="container-fluid">
-            <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1 class="m-0">{{ __('dashboard.dashboard') }}</h1>
-                </div><!-- /.col -->
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="{{@route('dashboard.index')}}">{{ __('dashboard.home page') }}</a></li>
-                    </ol>
-                </div><!-- /.col -->
-            </div><!-- /.row -->
-        </div><!-- /.container-fluid -->
+
+    <div class="content-wrapper">
+
+
+        <div class="content-header">
+            {{----------------------- for content -----------------------}}
+
+            <div class="container-fluid">
+                {{----------------------- for row -----------------------}}
+                <div class="row mb-2">
+               {{----------------------- for up title -----------------------}}
+                {{----------------------- end up title -----------------------}}
+                </div>
+                {{----------------------- end row-----------------------}}
+                @yield('content')
+            </div>
+        {{----------------------- end content-----------------------}}
+
+
+        </div>
     </div>
-    <!-- /.content-header -->
+@include('layouts.dashboard.footer')
 
 
 
-
-</div>

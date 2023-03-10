@@ -32,3 +32,19 @@
 <script src="{{asset('dist/js/demo.js')}}"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{asset('dist/js/pages/dashboard.js')}}"></script>
+
+
+
+
+<script src="{{asset('create_user_page/vendor/jquery/jquery.min.js')}}"></script>
+<!-- Vendor JS-->
+<script src="{{asset('create_user_page/vendor/select2/select2.min.js')}}"></script>
+<script src="{{asset('create_user_page/vendor/datepicker/moment.min.js')}}"></script>
+<script src="{{asset('create_user_page/vendor/datepicker/daterangepicker.js')}}"></script>
+
+<!-- Main JS-->
+<script src="{{asset('create_user_page/js/global.js')}}"></script>
+
+
+
+

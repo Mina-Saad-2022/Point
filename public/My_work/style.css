@@ -1,3 +1,59 @@
-*{
-    font-family: -webkit-body;!important
+* {
+    font-family: -webkit-body;
+!important
+}
+
+/*.content-wrapper ,.card input{*/
+/*    background: #FFFFFF !important;*/
+
+
+/*}*/
+/*.card{*/
+/*    background: #F4F6F9 !important;*/
+
+/*}*/
+.input-group input {
+    border: solid 1px #000000;
+    background: #ffffff !important;
+    border-radius: 15px;
+}
+
+/*.card *{*/
+/*    color: #000000 !important;*/
+/*}*/
+
+.content-header {
+    padding: 0px;
+}
+
+.card-body {
+    padding: 57px;
+
+}
+
+.btn_action_admin {
+    width: 30px !important;
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+    height: 40px !important;
+    font-size: 0.8rem !important;
+    text-align: center !important;
+    line-height: 40px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.pass_admin {
+    font-size: 12px;
+}
+
+.line_40 {
+    line-height: 40px !important;
+
+}
+
+.box-body {
+    background: #ffffff;
+
 }
